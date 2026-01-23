@@ -1,0 +1,306 @@
+[
+  {
+    "market_segment": "Air Platforms",
+    "definition": "Defense aircrafts such as fighter jets, helicopters, and UAVs.",
+    "system_types_general": [
+      {
+        "name": "Fixed Wing",
+        "definition": "Aircraft with stationary wings.",
+        "system_types_specific": [
+          { "name": "Fighter", "definition": "Combat aircraft designed for air-to-air combat. **MATCHING EXAMPLES:** F-35 Lightning II, F-16, F-22, F-15EX, F/A-18." },
+          { "name": "Transport Aircraft", "definition": "Aircraft used for troop and cargo transport. **CRITICAL:** Includes 'MC-130J Airborne Mission Networking' and specialized transport variants. **MATCHING EXAMPLES:** C-130 Hercules, C-5 Galaxy, C-17 Globemaster." },
+          { "name": "Trainers", "definition": "Aircraft for pilot instruction. **MATCHING EXAMPLES:** T-6 Texan II, T-38 Talon." },
+          { "name": "Tanker", "definition": "Aircraft for in-flight refuelling. **MATCHING EXAMPLES:** KC-135 Stratotanker, KC-46 Pegasus." },
+          { "name": "Maritime Aircraft", "definition": "Aircraft for naval surveillance and strike. **MATCHING EXAMPLES:** P-8A Poseidon, E-2D Advanced Hawkeye." },
+          { "name": "C4ISR", "definition": "Fixed-wing aircraft with command/control focus. **MATCHING EXAMPLES:** E-3 Sentry (AWACS), E-8C JSTARS." },
+          { "name": "Fixed Wing Other", "definition": "Miscellaneous fixed-wing platforms. **MATCHING EXAMPLES:** UAVs like Global Hawk, Reaper." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Rotary Wing",
+        "definition": "Helicopters and tiltrotors.",
+        "system_types_specific": [
+          { "name": "Rotary Wing Attack", "definition": "Helicopters for offensive missions. **MATCHING EXAMPLES:** AH-64 Apache, AH-1Z Viper." },
+          { "name": "Rotary Wing Transport", "definition": "Helicopters for transport. **MATCHING EXAMPLES:** CH-47 Chinook, CH-53K King Stallion, UH-60 Black Hawk. **NOTE:** V-22 Osprey is often classified here." },
+          { "name": "Rotary Wing Maritime", "definition": "Naval helicopters. **MATCHING EXAMPLES:** MH-60R Seahawk." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Other Lift Types",
+        "definition": "Non-traditional aircraft.",
+        "system_types_specific": [
+          { "name": "Hybrid", "definition": "Aircraft with fixed and rotary traits. **MATCHING EXAMPLES:** V-22 Osprey." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Air Platforms.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Land Platforms",
+    "definition": "Tanks, armored vehicles, logistic vehicles.",
+    "system_types_general": [
+      {
+        "name": "Armoured Fighting Vehicles",
+        "definition": "Combat vehicles.",
+        "system_types_specific": [
+          { "name": "Main Battle Tank", "definition": "Heavily armoured front-line tank. **MATCHING EXAMPLES:** M1 Abrams, Leopard 2." },
+          { "name": "Tracked Armoured Fighting Vehicles", "definition": "Armoured combat vehicles on tracks. **MATCHING EXAMPLES:** Bradley Fighting Vehicle, AMPV, CV90." },
+          { "name": "Wheeled Armoured Fighting Vehicles", "definition": "Armoured combat vehicles on wheels. **MATCHING EXAMPLES:** Stryker, ACV." },
+          { "name": "Amphibious Assault Vehicles", "definition": "Vehicles for beach landings. **MATCHING EXAMPLES:** AAV7, AAVP-7A1." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Logistics & Support",
+        "definition": "Vehicles for support.",
+        "system_types_specific": [
+          { "name": "Trucks", "definition": "General transport/resupply. **MATCHING EXAMPLES:** FMTV, HEMTT, Medium Tactical Vehicle (Navistar)." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Artillery",
+        "definition": "Large-caliber guns.",
+        "system_types_specific": [
+          { "name": "Self-Propelled Artillery", "definition": "Mobile artillery. **MATCHING EXAMPLES:** K9 Thunder, M109 Paladin." },
+          { "name": "Towed Artillery", "definition": "Stationary artillery. **MATCHING EXAMPLES:** M777." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Land Platforms.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Naval Platforms",
+    "definition": "Military vessels, ships, submarines.",
+    "system_types_general": [
+      {
+        "name": "Surface Combatants",
+        "definition": "Warships.",
+        "system_types_specific": [
+          { "name": "Destroyers", "definition": "Fast warships. **MATCHING EXAMPLES:** DDG-51, Arleigh Burke Class. Contracts for 'main reduction gears' fall here." },
+          { "name": "Aircraft Carrier", "definition": "Ship for launching aircraft. **MATCHING EXAMPLES:** USS Gerald R. Ford (CVN 78)." },
+          { "name": "Other Surface Combatants", "definition": "Small Combatants. **MATCHING EXAMPLES:** Unmanned Surface Vessels (USV)." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Amphibious (Maritime)",
+        "definition": "Ships for amphibious assault.",
+        "system_types_specific": [
+          { "name": "Amphibious Assault Ship", "definition": "Supports landings. **MATCHING EXAMPLES:** LHD Class, USS Iwo Jima." },
+          { "name": "Landing Platform Dock", "definition": "Carries landing craft. **MATCHING EXAMPLES:** LPD 17, USS San Antonio." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Mine Warfare/Mine Countermeasures (Maritime)",
+        "definition": "Mine detection/removal.",
+        "system_types_specific": [
+          { "name": "Mine Counter-Measures", "definition": "Systems to neutralize mines. **MATCHING EXAMPLES:** Seafox System, Atlas North America depot support." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Sub-Surface",
+        "definition": "Submarines.",
+        "system_types_specific": [
+          { "name": "Nuclear-Powered Submarine", "definition": "Nuclear subs. **MATCHING EXAMPLES:** Virginia-class, Seawolf-class." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Naval Platforms.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Space Systems",
+    "definition": "Weapons or platforms based on space technologies.",
+    "system_types_general": [
+      {
+        "name": "Satellite",
+        "definition": "Orbiting objects and their ground support.",
+        "system_types_specific": [
+          { "name": "Satellite", "definition": "General satellites. **MATCHING EXAMPLES:** Space Based Space Surveillance (SBSS)." },
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** SBIRS (Space Based Infrared System), Mobile Ground Terminals, S2E2, Ground Systems." }
+        ]
+      },
+      {
+        "name": "Launch Vehicle",
+        "definition": "Launch systems.",
+        "system_types_specific": [
+          { "name": "Launch Vehicle", "definition": "Rockets for space launch." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Space Systems.",
+        "system_types_specific": [
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Space Domain Awareness contracts, General space support." }
+        ]
+      }
+    ]
+  },
+  {
+    "market_segment": "C4ISR Systems",
+    "definition": "Command, Control, Comms, Intel, Surveillance.",
+    "system_types_general": [
+      {
+        "name": "Other C4ISR",
+        "definition": "**CRITICAL:** Use this for Data-as-a-Service (DaaS) and Software Platforms.",
+        "system_types_specific": [
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Palantir USG, Project Brown Heron, Data-as-a-Service platforms, software that ingests data for decision making." },
+          { "name": "PNT Systems", "definition": "Positioning, Navigation, and Timing." }
+        ]
+      },
+      {
+        "name": "Electro-optic Sensor",
+        "definition": "Optical systems.",
+        "system_types_specific": [
+          { "name": "Targeting EO/IR", "definition": "Used for weapon guidance. **MATCHING EXAMPLES:** Wescam MX-Series, Targeting Pods." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Defensive Systems",
+        "definition": "Countermeasures.",
+        "system_types_specific": [
+          { "name": "Defensive Aid Suite", "definition": "Integrated defensive system. **MATCHING EXAMPLES:** LAIRCM (Large Aircraft Infrared Countermeasures)." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Radar",
+        "definition": "Radar systems.",
+        "system_types_specific": [
+          { "name": "Air Search Radar", "definition": "Detects airborne targets. **MATCHING EXAMPLES:** AN/APG-77." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General C4ISR.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Weapon Systems",
+    "definition": "Missiles, bombs, guns.",
+    "system_types_general": [
+      {
+        "name": "Missile",
+        "definition": "Guided weapons.",
+        "system_types_specific": [
+          { "name": "Ship-to-Air", "definition": "Naval missiles for aerial threats. **MATCHING EXAMPLES:** Standard Missiles (SM-2, SM-6), RIM-162 ESSM." },
+          { "name": "Ballistic Missile", "definition": "Rocket-propelled strategic-weapons. **MATCHING EXAMPLES:** Trident II (D5)." },
+          { "name": "Surface-to-Air", "definition": "Targeting aircraft. **MATCHING EXAMPLES:** Patriot, THAAD." },
+          { "name": "Air-to-Surface", "definition": "Targeting ground from air. **MATCHING EXAMPLES:** JASSM, Hellfire." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Integrated Weapon Systems",
+        "definition": "Combined weapon platforms and launchers.",
+        "system_types_specific": [
+          { "name": "Air and Missile Defense System", "definition": "System integrating air and missile defense capabilities. **CRITICAL MATCHES:** MK 57 NATO Seasparrow, Aegis Combat System." },
+          { "name": "Other", "definition": "Other integrated systems." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not applicable." }
+        ]
+      },
+      {
+        "name": "Small Arms & Ammunition",
+        "definition": "Guns and bullets. **CRITICAL:** Also includes large caliber ammunition like tank rounds.",
+        "system_types_specific": [
+          { "name": "Small Arms", "definition": "Individual firearms. **MATCHING EXAMPLES:** Next Generation Squad Weapon (NGSW), M4." },
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** 120 mm tank training ammunition, large caliber munitions." }
+        ]
+      },
+      {
+        "name": "Electronic Warfare Systems",
+        "definition": "EW Systems.",
+        "system_types_specific": [
+          { "name": "Electronic Attack", "definition": "Offensive EW. **MATCHING EXAMPLES:** Next Generation Jammer." },
+          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Weapon Systems.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Infrastructure",
+    "definition": "Military buildings and facilities.",
+    "system_types_general": [
+      {
+        "name": "Maintenance Facilities",
+        "definition": "Repair and maintenance buildings. **MATCHING EXAMPLES:** Hazardous Material Facility."
+      },
+      {
+        "name": "Utilities",
+        "definition": "Power, water, waste. **MATCHING EXAMPLES:** Utility privatization contracts."
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General construction.",
+        "system_types_specific": [
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** General construction, design-build contracts, paving, roofing, renovation." }
+        ]
+      }
+    ]
+  },
+  {
+    "market_segment": "Training & Simulation",
+    "definition": "Training services and equipment.",
+    "system_types_general": [
+      {
+        "name": "Training Aids",
+        "definition": "Tools for training.",
+        "system_types_specific": [
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Cyber Training Environment." }
+        ]
+      },
+      {
+        "name": "Other",
+        "definition": "Other training.",
+        "system_types_specific": [
+          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Courseware development, instructor services." }
+        ]
+      },
+      {
+        "name": "Not Applicable",
+        "definition": "General Training.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+      }
+    ]
+  },
+  {
+    "market_segment": "Unknown",
+    "definition": "Unknown segment.",
+    "system_types_general": [
+      {
+        "name": "Not Applicable",
+        "definition": "Select this when the system type is not applicable.",
+        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when the specific system type is not applicable." }]
+      }
+    ]
+  }
+]
