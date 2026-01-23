@@ -1,0 +1,15 @@
+pandas
+numpy
+openpyxl
+xlsxwriter
+python-dateutil
+scikit-learn
+openai
+langchain
+langchain-core
+langchain-openai
+langchain-community
+langgraph
+pydantic
+sentence-transformers
+faiss-cpu
