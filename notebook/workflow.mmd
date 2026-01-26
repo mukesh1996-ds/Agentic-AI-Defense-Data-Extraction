@@ -5,22 +5,22 @@ config:
 ---
 graph TD;
 	__start__([<p>__start__</p>]):::first
-	Stage1(Stage1)
-	Stage2(Stage2)
-	Stage3(Stage3)
-	Stage4(Stage4)
-	Stage5(Stage5)
-	Stage6(Stage6)
-	Stage7(Stage7)
+	SourcingExtractor(SourcingExtractor)
+	GeographyExtractor(GeographyExtractor)
+	ContractExtractor(ContractExtractor)
+	SplitterEngine(SplitterEngine)
+	SystemClassifierRAG(SystemClassifierRAG)
+	QualityValidator(QualityValidator)
+	LLMFailRowFixer(LLMFailRowFixer)
 	__end__([<p>__end__</p>]):::last
-	Stage1 --> Stage2;
-	Stage2 --> Stage3;
-	Stage3 --> Stage4;
-	Stage4 --> Stage5;
-	Stage5 --> Stage6;
-	Stage6 --> Stage7;
-	__start__ --> Stage1;
-	Stage7 --> __end__;
+	ContractExtractor --> SplitterEngine;
+	GeographyExtractor --> ContractExtractor;
+	QualityValidator --> LLMFailRowFixer;
+	SourcingExtractor --> GeographyExtractor;
+	SplitterEngine --> SystemClassifierRAG;
+	SystemClassifierRAG --> QualityValidator;
+	__start__ --> SourcingExtractor;
+	LLMFailRowFixer --> __end__;
 	classDef default fill:#f2f0ff,line-height:1.2
 	classDef first fill-opacity:0
 	classDef last fill:#bfb6fc

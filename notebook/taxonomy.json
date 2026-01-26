@@ -7,299 +7,1793 @@
         "name": "Fixed Wing",
         "definition": "Aircraft with stationary wings.",
         "system_types_specific": [
-          { "name": "Fighter", "definition": "Combat aircraft designed for air-to-air combat. **MATCHING EXAMPLES:** F-35 Lightning II, F-16, F-22, F-15EX, F/A-18." },
-          { "name": "Transport Aircraft", "definition": "Aircraft used for troop and cargo transport. **CRITICAL:** Includes 'MC-130J Airborne Mission Networking' and specialized transport variants. **MATCHING EXAMPLES:** C-130 Hercules, C-5 Galaxy, C-17 Globemaster." },
-          { "name": "Trainers", "definition": "Aircraft for pilot instruction. **MATCHING EXAMPLES:** T-6 Texan II, T-38 Talon." },
-          { "name": "Tanker", "definition": "Aircraft for in-flight refuelling. **MATCHING EXAMPLES:** KC-135 Stratotanker, KC-46 Pegasus." },
-          { "name": "Maritime Aircraft", "definition": "Aircraft for naval surveillance and strike. **MATCHING EXAMPLES:** P-8A Poseidon, E-2D Advanced Hawkeye." },
-          { "name": "C4ISR", "definition": "Fixed-wing aircraft with command/control focus. **MATCHING EXAMPLES:** E-3 Sentry (AWACS), E-8C JSTARS." },
-          { "name": "Fixed Wing Other", "definition": "Miscellaneous fixed-wing platforms. **MATCHING EXAMPLES:** UAVs like Global Hawk, Reaper." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Fighter",
+            "definition": "Combat aircraft designed for air-to-air combat. **MATCHING EXAMPLES:** F-35 Lightning II, F-16, F-22, F-15EX, F/A-18."
+          },
+          {
+            "name": "Transport Aircraft",
+            "definition": "Aircraft designed for transporting troops, weapons, and other military equipment. **MATCHING EXAMPLES:** C-130 Hercules, C-17 Globemaster III, A400M Atlas, C-27J Spartan, C-295."
+          },
+          {
+            "name": "Trainers",
+            "definition": "Aircraft designed for flight training of pilots and aircrew. **MATCHING EXAMPLES:** T-7A Red Hawk, T-6 Texan II, Pilatus PC-21, Hawk, M-346 Master."
+          },
+          {
+            "name": "Tanker",
+            "definition": "Aircraft designed for aerial refueling of other aircraft. **MATCHING EXAMPLES:** KC-46 Pegasus, KC-135 Stratotanker, A330 MRTT, KC-130J."
+          },
+          {
+            "name": "Maritime Aircraft",
+            "definition": "Aircraft designed for maritime patrol, anti-submarine warfare, and anti-surface warfare. **MATCHING EXAMPLES:** P-8 Poseidon, P-3 Orion, ATR 72 MP, C-295 MPA."
+          },
+          {
+            "name": "C4ISR",
+            "definition": "Aircraft designed for Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance. **MATCHING EXAMPLES:** E-3 Sentry (AWACS), E-2 Hawkeye, RC-135 Rivet Joint, Global 6000 (modified)."
+          },
+          {
+            "name": "Fixed Wing Other",
+            "definition": "Other fixed-wing aircraft not covered by the main categories. **MATCHING EXAMPLES:** Gliders, Experimental aircraft, Special mission aircraft not fitting other categories."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Bomber",
+            "definition": "TBD"
+          },
+          {
+            "name": "Light Combat Aircraft",
+            "definition": "TBD"
+          },
+          {
+            "name": "Gunship",
+            "definition": "TBD"
+          },
+          {
+            "name": "ISR-Strike",
+            "definition": "TBD"
+          },
+          {
+            "name": "AEW&C",
+            "definition": "TBD"
+          },
+          {
+            "name": "Target Drone",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Rotary Wing",
-        "definition": "Helicopters and tiltrotors.",
+        "definition": "Aircraft with rotating wings (helicopters).",
         "system_types_specific": [
-          { "name": "Rotary Wing Attack", "definition": "Helicopters for offensive missions. **MATCHING EXAMPLES:** AH-64 Apache, AH-1Z Viper." },
-          { "name": "Rotary Wing Transport", "definition": "Helicopters for transport. **MATCHING EXAMPLES:** CH-47 Chinook, CH-53K King Stallion, UH-60 Black Hawk. **NOTE:** V-22 Osprey is often classified here." },
-          { "name": "Rotary Wing Maritime", "definition": "Naval helicopters. **MATCHING EXAMPLES:** MH-60R Seahawk." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Attack Helicopter",
+            "definition": "Helicopters designed for attacking ground targets. **MATCHING EXAMPLES:** AH-64 Apache, AH-1Z Viper, Eurocopter Tiger, Mi-24 Hind, Ka-52 Alligator."
+          },
+          {
+            "name": "Transport Helicopter",
+            "definition": "Helicopters designed for transporting troops and cargo. **MATCHING EXAMPLES:** CH-47 Chinook, CH-53K King Stallion, UH-60 Black Hawk, Mi-17, NH90."
+          },
+          {
+            "name": "Utility Helicopter",
+            "definition": "Helicopters designed for general-purpose utility roles. **MATCHING EXAMPLES:** UH-1Y Venom, H145M, AW139, Bell 412."
+          },
+          {
+            "name": "Maritime Helicopter",
+            "definition": "Helicopters designed for naval operations. **MATCHING EXAMPLES:** MH-60R Seahawk, NH90 NFH, AW159 Wildcat, Merlin HM2."
+          },
+          {
+            "name": "Scout Helicopter",
+            "definition": "Helicopters designed for reconnaissance and observation. **MATCHING EXAMPLES:** OH-58 Kiowa, Bell 407, MD 530."
+          },
+          {
+            "name": "Rotary Wing Other",
+            "definition": "Other rotary-wing aircraft. **MATCHING EXAMPLES:** Tiltrotors (V-22 Osprey - often categorized here or separate), Autogyros."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Rotary Wing Attack",
+            "definition": "TBD"
+          },
+          {
+            "name": "Rotary Wing Maritime",
+            "definition": "TBD"
+          },
+          {
+            "name": "Rotary Wing Scout",
+            "definition": "TBD"
+          },
+          {
+            "name": "Rotary Wing Transport",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "UAV",
+        "definition": "Unmanned Aerial Vehicles.",
+        "system_types_specific": [
+          {
+            "name": "MALE UAV",
+            "definition": "Medium-Altitude Long-Endurance UAV. **MATCHING EXAMPLES:** MQ-9 Reaper, MQ-1 Predator, Bayraktar TB2, Heron TP."
+          },
+          {
+            "name": "HALE UAV",
+            "definition": "High-Altitude Long-Endurance UAV. **MATCHING EXAMPLES:** RQ-4 Global Hawk, MQ-4C Triton."
+          },
+          {
+            "name": "Tactical UAV",
+            "definition": "UAVs designed for tactical surveillance and reconnaissance. **MATCHING EXAMPLES:** RQ-7 Shadow, ScanEagle, Blackjack."
+          },
+          {
+            "name": "Mini/Micro UAV",
+            "definition": "Small UAVs used for close-range surveillance. **MATCHING EXAMPLES:** Raven, Puma, Black Hornet."
+          },
+          {
+            "name": "UCAV",
+            "definition": "Unmanned Combat Aerial Vehicle. **MATCHING EXAMPLES:** X-47B, nEUROn, Taranis, Okhotnik."
+          },
+          {
+            "name": "Loitering Munition",
+            "definition": "Munitions that loiter over a target area before attacking. **MATCHING EXAMPLES:** Switchblade, Harop, Hero series."
+          },
+          {
+            "name": "UAV Other",
+            "definition": "Other types of UAVs. **MATCHING EXAMPLES:** Target drones, cargo UAVs."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
         ]
       },
       {
         "name": "Other Lift Types",
-        "definition": "Non-traditional aircraft.",
+        "definition": "Other types of aerial lift platforms.",
         "system_types_specific": [
-          { "name": "Hybrid", "definition": "Aircraft with fixed and rotary traits. **MATCHING EXAMPLES:** V-22 Osprey." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Lighter-than-Air",
+            "definition": "Aircraft that float in the air (e.g., blimps, aerostats). **MATCHING EXAMPLES:** JLENS, Tethered Aerostat Radar System."
+          },
+          {
+            "name": "Spaceplane",
+            "definition": "Vehicles that operate in space but land like aircraft. **MATCHING EXAMPLES:** X-37B."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Hybrid",
+            "definition": "TBD"
+          },
+          {
+            "name": "Airship",
+            "definition": "TBD"
+          },
+          {
+            "name": "Parafoil",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "General Air Platforms.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "definition": "Category not applicable.",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable."
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Land Platforms",
-    "definition": "Tanks, armored vehicles, logistic vehicles.",
+    "definition": "Defense ground vehicles and artillery.",
     "system_types_general": [
       {
         "name": "Armoured Fighting Vehicles",
-        "definition": "Combat vehicles.",
+        "definition": "Armored vehicles designed for combat.",
         "system_types_specific": [
-          { "name": "Main Battle Tank", "definition": "Heavily armoured front-line tank. **MATCHING EXAMPLES:** M1 Abrams, Leopard 2." },
-          { "name": "Tracked Armoured Fighting Vehicles", "definition": "Armoured combat vehicles on tracks. **MATCHING EXAMPLES:** Bradley Fighting Vehicle, AMPV, CV90." },
-          { "name": "Wheeled Armoured Fighting Vehicles", "definition": "Armoured combat vehicles on wheels. **MATCHING EXAMPLES:** Stryker, ACV." },
-          { "name": "Amphibious Assault Vehicles", "definition": "Vehicles for beach landings. **MATCHING EXAMPLES:** AAV7, AAVP-7A1." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
-        ]
-      },
-      {
-        "name": "Logistics & Support",
-        "definition": "Vehicles for support.",
-        "system_types_specific": [
-          { "name": "Trucks", "definition": "General transport/resupply. **MATCHING EXAMPLES:** FMTV, HEMTT, Medium Tactical Vehicle (Navistar)." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Main Battle Tank",
+            "definition": "Heavily armored and armed combat vehicles. **MATCHING EXAMPLES:** M1 Abrams, Leopard 2, Challenger 2, T-90, Merkava."
+          },
+          {
+            "name": "Infantry Fighting Vehicle",
+            "definition": "Armored vehicles designed to transport infantry into battle and provide fire support. **MATCHING EXAMPLES:** M2 Bradley, Puma, CV90, BMP-3."
+          },
+          {
+            "name": "Armoured Personnel Carrier",
+            "definition": "Armored vehicles designed to transport personnel. **MATCHING EXAMPLES:** M113, Stryker (ICV variant), Boxer, Patria AMV."
+          },
+          {
+            "name": "Armoured Reconnaissance Vehicle",
+            "definition": "Armored vehicles designed for reconnaissance. **MATCHING EXAMPLES:** Ajax, Fennek, CRV."
+          },
+          {
+            "name": "Mine Protected Vehicle",
+            "definition": "Vehicles designed to withstand landmine and IED attacks (MRAP). **MATCHING EXAMPLES:** Cougar, MaxxPro, Bushmaster."
+          },
+          {
+            "name": "AFV Other",
+            "definition": "Other armored fighting vehicles. **MATCHING EXAMPLES:** Tank destroyers, combat engineering vehicles (if armored)."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Armoured All-Terrain Vehicle",
+            "definition": "TBD"
+          },
+          {
+            "name": "Armoured Utility/Protected Patrol Vehicles",
+            "definition": "TBD"
+          },
+          {
+            "name": "Tracked Armoured Fighting Vehicles",
+            "definition": "TBD"
+          },
+          {
+            "name": "Wheeled Armoured Fighting Vehicles",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Artillery",
-        "definition": "Large-caliber guns.",
+        "definition": "Large-caliber guns used in warfare.",
         "system_types_specific": [
-          { "name": "Self-Propelled Artillery", "definition": "Mobile artillery. **MATCHING EXAMPLES:** K9 Thunder, M109 Paladin." },
-          { "name": "Towed Artillery", "definition": "Stationary artillery. **MATCHING EXAMPLES:** M777." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Self-Propelled Artillery",
+            "definition": "Artillery equipped with its own propulsion system. **MATCHING EXAMPLES:** M109 Paladin, PzH 2000, K9 Thunder, Archer."
+          },
+          {
+            "name": "Towed Artillery",
+            "definition": "Artillery that is towed by another vehicle. **MATCHING EXAMPLES:** M777, L118 Light Gun."
+          },
+          {
+            "name": "Multiple Rocket Launcher",
+            "definition": "Rocket artillery systems. **MATCHING EXAMPLES:** M142 HIMARS, M270 MLRS, BM-21 Grad."
+          },
+          {
+            "name": "Mortar",
+            "definition": "Muzzle-loading indirect fire weapon. **MATCHING EXAMPLES:** M120, M224."
+          },
+          {
+            "name": "Artillery Other",
+            "definition": "Other types of artillery. **MATCHING EXAMPLES:** Coastal artillery, anti-aircraft guns (if categorized here)."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Tactical Vehicles",
+        "definition": "Vehicles designed for tactical mobility.",
+        "system_types_specific": [
+          {
+            "name": "Light Utility Vehicle",
+            "definition": "Lightweight vehicles for general utility. **MATCHING EXAMPLES:** HMMWV (Humvee), JLTV, G-Wagon."
+          },
+          {
+            "name": "Truck",
+            "definition": "Military trucks for transport and logistics. **MATCHING EXAMPLES:** FMTV, HEMTT, MAN HX series."
+          },
+          {
+            "name": "Tactical Vehicle Other",
+            "definition": "Other tactical vehicles. **MATCHING EXAMPLES:** All-terrain vehicles (ATVs), motorcycles."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Logistics & Support",
+        "definition": "Vehicles and equipment for logistics and support.",
+        "system_types_specific": [
+          {
+            "name": "Engineering Vehicle",
+            "definition": "Vehicles designed for construction and demolition tasks. **MATCHING EXAMPLES:** M9 ACE, ABV, Bridge layers."
+          },
+          {
+            "name": "Recovery Vehicle",
+            "definition": "Vehicles designed to recover other vehicles. **MATCHING EXAMPLES:** M88 Hercules, Buffalo."
+          },
+          {
+            "name": "Logistics Support Other",
+            "definition": "Other logistics and support vehicles. **MATCHING EXAMPLES:** Ambulances, command posts, fuel tankers."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "All-Terrain Vehicles",
+            "definition": "TBD"
+          },
+          {
+            "name": "Combat Engineering Vehicles",
+            "definition": "TBD"
+          },
+          {
+            "name": "Construction Vehicles",
+            "definition": "TBD"
+          },
+          {
+            "name": "Engineering Equipment",
+            "definition": "TBD"
+          },
+          {
+            "name": "Light Tactical/Utility Vehicles",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Unmanned Ground Vehicles",
+        "definition": "Vehicles that operate on the ground without an onboard human presence.",
+        "system_types_specific": [
+          {
+            "name": "Combat UGV",
+            "definition": "UGVs designed for combat. **MATCHING EXAMPLES:** Ripsaw, Uran-9."
+          },
+          {
+            "name": "ISR UGV",
+            "definition": "UGVs designed for intelligence, surveillance, and reconnaissance. **MATCHING EXAMPLES:** PackBot, Talon."
+          },
+          {
+            "name": "Logistics UGV",
+            "definition": "UGVs designed for logistics and transport. **MATCHING EXAMPLES:** SMET, MUTT."
+          },
+          {
+            "name": "EOD UGV",
+            "definition": "UGVs designed for explosive ordnance disposal. **MATCHING EXAMPLES:** Andros."
+          },
+          {
+            "name": "UGV Other",
+            "definition": "Other types of UGVs."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Other Land",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Soldier Fighting Systems",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Rolling Stock",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "General Land Platforms.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Naval Platforms",
-    "definition": "Military vessels, ships, submarines.",
+    "definition": "Defense vessels such as submarines, aircraft carriers, and destroyers.",
     "system_types_general": [
       {
-        "name": "Surface Combatants",
-        "definition": "Warships.",
+        "name": "Sub-Surface",
+        "definition": "Vessels designed to operate underwater.",
         "system_types_specific": [
-          { "name": "Destroyers", "definition": "Fast warships. **MATCHING EXAMPLES:** DDG-51, Arleigh Burke Class. Contracts for 'main reduction gears' fall here." },
-          { "name": "Aircraft Carrier", "definition": "Ship for launching aircraft. **MATCHING EXAMPLES:** USS Gerald R. Ford (CVN 78)." },
-          { "name": "Other Surface Combatants", "definition": "Small Combatants. **MATCHING EXAMPLES:** Unmanned Surface Vessels (USV)." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Ballistic Missile Submarine",
+            "definition": "Submarines designed to launch ballistic missiles (SSBN). **MATCHING EXAMPLES:** Ohio class, Columbia class, Vanguard class, Borei class."
+          },
+          {
+            "name": "Attack Submarine",
+            "definition": "Submarines designed to attack other submarines and ships (SSN/SSK). **MATCHING EXAMPLES:** Virginia class, Astute class, Los Angeles class, Type 212."
+          },
+          {
+            "name": "Cruise Missile Submarine",
+            "definition": "Submarines designed to launch cruise missiles (SSGN). **MATCHING EXAMPLES:** Oscar class, Ohio class (converted)."
+          },
+          {
+            "name": "Midget Submarine",
+            "definition": "Small submarines used for special operations. **MATCHING EXAMPLES:** SDV."
+          },
+          {
+            "name": "Sub-Surface Other",
+            "definition": "Other sub-surface vessels. **MATCHING EXAMPLES:** Research submarines, rescue submarines."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Diesel-Powered Submarine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Nuclear-Powered Submarine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
         ]
       },
       {
-        "name": "Amphibious (Maritime)",
-        "definition": "Ships for amphibious assault.",
+        "name": "Surface Combatants",
+        "definition": "Ships designed for warfare on the surface of the water.",
         "system_types_specific": [
-          { "name": "Amphibious Assault Ship", "definition": "Supports landings. **MATCHING EXAMPLES:** LHD Class, USS Iwo Jima." },
-          { "name": "Landing Platform Dock", "definition": "Carries landing craft. **MATCHING EXAMPLES:** LPD 17, USS San Antonio." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Aircraft Carrier",
+            "definition": "Warships designed to deploy and recover aircraft. **MATCHING EXAMPLES:** Ford class, Nimitz class, Queen Elizabeth class."
+          },
+          {
+            "name": "Destroyer",
+            "definition": "Fast, maneuverable warships. **MATCHING EXAMPLES:** Arleigh Burke class, Zumwalt class, Type 45."
+          },
+          {
+            "name": "Frigate",
+            "definition": "Warships smaller than destroyers. **MATCHING EXAMPLES:** FREMM, Type 26, FFG(X)."
+          },
+          {
+            "name": "Corvette",
+            "definition": "Small warships. **MATCHING EXAMPLES:** Visby class, Sa'ar 5 class."
+          },
+          {
+            "name": "Cruiser",
+            "definition": "Large warships. **MATCHING EXAMPLES:** Ticonderoga class."
+          },
+          {
+            "name": "Surface Combatant Other",
+            "definition": "Other surface combatants. **MATCHING EXAMPLES:** Littoral Combat Ships (LCS)."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Cruisers",
+            "definition": "TBD"
+          },
+          {
+            "name": "Destroyers",
+            "definition": "TBD"
+          },
+          {
+            "name": "Frigates",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other Surface Combatants",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Amphibious",
+        "definition": "Ships designed to support amphibious operations.",
+        "system_types_specific": [
+          {
+            "name": "Amphibious Assault Ship",
+            "definition": "Ships designed to deploy ground forces on enemy shores. **MATCHING EXAMPLES:** Wasp class, America class, Mistral class."
+          },
+          {
+            "name": "Landing Platform Dock",
+            "definition": "Amphibious warfare ships with a well deck. **MATCHING EXAMPLES:** San Antonio class."
+          },
+          {
+            "name": "Amphibious Other",
+            "definition": "Other amphibious ships. **MATCHING EXAMPLES:** Landing craft."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Patrol and Costal Combatants",
+        "definition": "Smaller vessels for patrol and coastal defense.",
+        "system_types_specific": [
+          {
+            "name": "Patrol Vessel",
+            "definition": "Ships designed for coastal defense and patrol. **MATCHING EXAMPLES:** OPV, IPV."
+          },
+          {
+            "name": "Fast Attack Craft",
+            "definition": "Small, fast vessels armed with missiles or guns. **MATCHING EXAMPLES:** Missile boats."
+          },
+          {
+            "name": "Patrol Other",
+            "definition": "Other patrol vessels."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Patrol Boat/Craft - Coastal",
+            "definition": "TBD"
+          },
+          {
+            "name": "Patrol Boat/Craft - Ocean",
+            "definition": "TBD"
+          },
+          {
+            "name": "Patrol Boat/Craft - Riverine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Auxiliaries",
+        "definition": "Support ships.",
+        "system_types_specific": [
+          {
+            "name": "Replenishment Ship",
+            "definition": "Ships designed to supply other ships with fuel, food, and ammunition. **MATCHING EXAMPLES:** Tankers, supply ships."
+          },
+          {
+            "name": "Transport Ship",
+            "definition": "Ships designed to transport troops and equipment."
+          },
+          {
+            "name": "Auxiliary Other",
+            "definition": "Other auxiliary ships. **MATCHING EXAMPLES:** Hospital ships, tugs, research ships."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Unmanned Maritime Systems",
+        "definition": "Unmanned vessels operating on or under the water.",
+        "system_types_specific": [
+          {
+            "name": "USV",
+            "definition": "Unmanned Surface Vehicle. **MATCHING EXAMPLES:** Sea Hunter."
+          },
+          {
+            "name": "UUV",
+            "definition": "Unmanned Underwater Vehicle. **MATCHING EXAMPLES:** Echo Voyager, Orca."
+          },
+          {
+            "name": "UMS Other",
+            "definition": "Other types of UMS."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
         ]
       },
       {
         "name": "Mine Warfare/Mine Countermeasures (Maritime)",
-        "definition": "Mine detection/removal.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Mine Counter-Measures", "definition": "Systems to neutralize mines. **MATCHING EXAMPLES:** Seafox System, Atlas North America depot support." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Mine Sweeper",
+            "definition": "TBD"
+          },
+          {
+            "name": "Mine Counter-Measures",
+            "definition": "TBD"
+          },
+          {
+            "name": "Mine Hunter",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
-        "name": "Sub-Surface",
-        "definition": "Submarines.",
+        "name": "Amphibious (Maritime)",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Nuclear-Powered Submarine", "definition": "Nuclear subs. **MATCHING EXAMPLES:** Virginia-class, Seawolf-class." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Amphibious Assault Ship",
+            "definition": "TBD"
+          },
+          {
+            "name": "Landing Craft",
+            "definition": "TBD"
+          },
+          {
+            "name": "Landing Platform Dock",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Logistics and Support (Maritime)",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Replenishment Ship",
+            "definition": "TBD"
+          },
+          {
+            "name": "Transport Ship",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Other Maritime",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "General Naval Platforms.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Space Systems",
-    "definition": "Weapons or platforms based on space technologies.",
+    "definition": "Systems designed for operation in or use of space.",
     "system_types_general": [
       {
         "name": "Satellite",
-        "definition": "Orbiting objects and their ground support.",
+        "definition": "Objects intentionally placed into orbit.",
         "system_types_specific": [
-          { "name": "Satellite", "definition": "General satellites. **MATCHING EXAMPLES:** Space Based Space Surveillance (SBSS)." },
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** SBIRS (Space Based Infrared System), Mobile Ground Terminals, S2E2, Ground Systems." }
+          {
+            "name": "Communication Satellite",
+            "definition": "Satellites used for communications. **MATCHING EXAMPLES:** WGS, AEHF, Starlink (military use)."
+          },
+          {
+            "name": "ISR Satellite",
+            "definition": "Satellites used for intelligence, surveillance, and reconnaissance. **MATCHING EXAMPLES:** Keyhole, Lacrosse, SBIRS."
+          },
+          {
+            "name": "Navigation Satellite",
+            "definition": "Satellites used for navigation. **MATCHING EXAMPLES:** GPS, Galileo."
+          },
+          {
+            "name": "Satellite Other",
+            "definition": "Other types of satellites. **MATCHING EXAMPLES:** Weather satellites, research satellites."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
         ]
       },
       {
         "name": "Launch Vehicle",
-        "definition": "Launch systems.",
+        "definition": "Rockets used to carry payloads into space.",
         "system_types_specific": [
-          { "name": "Launch Vehicle", "definition": "Rockets for space launch." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Heavy Lift Launch Vehicle",
+            "definition": "Launch vehicles capable of lifting heavy payloads. **MATCHING EXAMPLES:** Falcon Heavy, Delta IV Heavy, SLS."
+          },
+          {
+            "name": "Medium Lift Launch Vehicle",
+            "definition": "Launch vehicles for medium payloads. **MATCHING EXAMPLES:** Falcon 9, Atlas V, Soyuz."
+          },
+          {
+            "name": "Small Lift Launch Vehicle",
+            "definition": "Launch vehicles for small payloads. **MATCHING EXAMPLES:** Electron, Pegasus."
+          },
+          {
+            "name": "Launch Vehicle Other",
+            "definition": "Other launch vehicles."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Space Ground Segment",
+        "definition": "Ground-based equipment for space operations.",
+        "system_types_specific": [
+          {
+            "name": "Ground Station",
+            "definition": "Facilities for communicating with satellites. **MATCHING EXAMPLES:** Satellite dishes, control centers."
+          },
+          {
+            "name": "Space Ground Other",
+            "definition": "Other space ground segment equipment."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Space Other",
+        "definition": "Other space systems.",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Anti-Space",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Other",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "General Space Systems.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Space Domain Awareness contracts, General space support." }
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       }
     ]
   },
   {
     "market_segment": "C4ISR Systems",
-    "definition": "Command, Control, Comms, Intel, Surveillance.",
+    "definition": "Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance.",
     "system_types_general": [
       {
-        "name": "Other C4ISR",
-        "definition": "**CRITICAL:** Use this for Data-as-a-Service (DaaS) and Software Platforms.",
+        "name": "Radar",
+        "definition": "Radio Detection and Ranging systems.",
         "system_types_specific": [
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Palantir USG, Project Brown Heron, Data-as-a-Service platforms, software that ingests data for decision making." },
-          { "name": "PNT Systems", "definition": "Positioning, Navigation, and Timing." }
+          {
+            "name": "Air Defense Radar",
+            "definition": "Radars designed to detect aircraft. **MATCHING EXAMPLES:** AN/MPQ-64 Sentinel, AN/SPY-1."
+          },
+          {
+            "name": "Fire Control Radar",
+            "definition": "Radars designed to provide information to a fire-control system. **MATCHING EXAMPLES:** AN/APG-81, AN/APG-68."
+          },
+          {
+            "name": "Surveillance Radar",
+            "definition": "Radars designed for general surveillance. **MATCHING EXAMPLES:** AN/TPS-75."
+          },
+          {
+            "name": "Radar Other",
+            "definition": "Other types of radar. **MATCHING EXAMPLES:** Weather radar, ground penetrating radar."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Communications",
+        "definition": "Systems for communication.",
+        "system_types_specific": [
+          {
+            "name": "Tactical Radio",
+            "definition": "Radios used for tactical communication. **MATCHING EXAMPLES:** SINCGARS, PRC-117."
+          },
+          {
+            "name": "Satcom",
+            "definition": "Satellite communication equipment. **MATCHING EXAMPLES:** Terminals, antennas."
+          },
+          {
+            "name": "Network Equipment",
+            "definition": "Equipment for computer networks. **MATCHING EXAMPLES:** Routers, switches."
+          },
+          {
+            "name": "Communications Other",
+            "definition": "Other communication systems."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Man-Portable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Command and Control",
+        "definition": "Systems for command and control (C2).",
+        "system_types_specific": [
+          {
+            "name": "C2 System",
+            "definition": "Software and hardware for C2. **MATCHING EXAMPLES:** IBCS, AFATDS, GCCS."
+          },
+          {
+            "name": "Battle Management System",
+            "definition": "Systems for managing the battlefield. **MATCHING EXAMPLES:** Blue Force Tracker."
+          },
+          {
+            "name": "C2 Other",
+            "definition": "Other C2 systems."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Electronic Warfare",
+        "definition": "Systems for electronic warfare (EW).",
+        "system_types_specific": [
+          {
+            "name": "Electronic Attack",
+            "definition": "Systems for offensive EW. **MATCHING EXAMPLES:** Jammers, EA-18G Growler systems."
+          },
+          {
+            "name": "Electronic Support",
+            "definition": "Systems for detecting and analyzing electronic signals. **MATCHING EXAMPLES:** RWR, ESM."
+          },
+          {
+            "name": "Electronic Protection",
+            "definition": "Systems for protecting against EW. **MATCHING EXAMPLES:** Flares, Chaff (though often considered countermeasures)."
+          },
+          {
+            "name": "EW Other",
+            "definition": "Other EW systems."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
         ]
       },
       {
         "name": "Electro-optic Sensor",
-        "definition": "Optical systems.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Targeting EO/IR", "definition": "Used for weapon guidance. **MATCHING EXAMPLES:** Wescam MX-Series, Targeting Pods." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Sonar",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Computers",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Cyber",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Defensive Systems",
-        "definition": "Countermeasures.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Defensive Aid Suite", "definition": "Integrated defensive system. **MATCHING EXAMPLES:** LAIRCM (Large Aircraft Infrared Countermeasures)." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Defensive Aid Suite",
+            "definition": "TBD"
+          },
+          {
+            "name": "Countermeasures",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
-        "name": "Radar",
-        "definition": "Radar systems.",
+        "name": "Integrated C4ISR System",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Air Search Radar", "definition": "Detects airborne targets. **MATCHING EXAMPLES:** AN/APG-77." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
-        "name": "Not Applicable",
-        "definition": "General C4ISR.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "name": "Artificial Intelligence",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Other C4ISR",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Weapon Systems",
-    "definition": "Missiles, bombs, guns.",
+    "definition": "Weapons and ammunition.",
     "system_types_general": [
       {
         "name": "Missile",
-        "definition": "Guided weapons.",
+        "definition": "Guided propelled weapons.",
         "system_types_specific": [
-          { "name": "Ship-to-Air", "definition": "Naval missiles for aerial threats. **MATCHING EXAMPLES:** Standard Missiles (SM-2, SM-6), RIM-162 ESSM." },
-          { "name": "Ballistic Missile", "definition": "Rocket-propelled strategic-weapons. **MATCHING EXAMPLES:** Trident II (D5)." },
-          { "name": "Surface-to-Air", "definition": "Targeting aircraft. **MATCHING EXAMPLES:** Patriot, THAAD." },
-          { "name": "Air-to-Surface", "definition": "Targeting ground from air. **MATCHING EXAMPLES:** JASSM, Hellfire." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Air-to-Air Missile",
+            "definition": "Missiles launched from aircraft against other aircraft. **MATCHING EXAMPLES:** AIM-120 AMRAAM, AIM-9 Sidewinder, Meteor."
+          },
+          {
+            "name": "Air-to-Surface Missile",
+            "definition": "Missiles launched from aircraft against ground/sea targets. **MATCHING EXAMPLES:** AGM-114 Hellfire, AGM-65 Maverick, Storm Shadow."
+          },
+          {
+            "name": "Surface-to-Air Missile",
+            "definition": "Missiles launched from the ground/sea against aircraft. **MATCHING EXAMPLES:** Patriot, S-400, SM-2, SM-6."
+          },
+          {
+            "name": "Surface-to-Surface Missile",
+            "definition": "Missiles launched from the ground/sea against ground/sea targets. **MATCHING EXAMPLES:** MGM-140 ATACMS, Tomahawk, NSM."
+          },
+          {
+            "name": "Anti-Tank Guided Missile",
+            "definition": "Missiles designed to destroy tanks. **MATCHING EXAMPLES:** Javelin, TOW, Spike."
+          },
+          {
+            "name": "Ballistic Missile",
+            "definition": "Missiles that follow a ballistic trajectory. **MATCHING EXAMPLES:** Minuteman III, Trident II."
+          },
+          {
+            "name": "Cruise Missile",
+            "definition": "Missiles that fly at low altitude and high speed. **MATCHING EXAMPLES:** Tomahawk, JASSM."
+          },
+          {
+            "name": "Missile Other",
+            "definition": "Other types of missiles."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Anti-Radiation",
+            "definition": "TBD"
+          },
+          {
+            "name": "Anti-Ship",
+            "definition": "TBD"
+          },
+          {
+            "name": "Anti-Submarine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Anti-Tank",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Munition",
+        "definition": "Ammunition and explosives.",
+        "system_types_specific": [
+          {
+            "name": "Small Arms Ammunition",
+            "definition": "Ammunition for small arms. **MATCHING EXAMPLES:** 5.56mm, 7.62mm, .50 BMG."
+          },
+          {
+            "name": "Medium Caliber Ammunition",
+            "definition": "Ammunition for autocannons. **MATCHING EXAMPLES:** 20mm, 25mm, 30mm."
+          },
+          {
+            "name": "Large Caliber Ammunition",
+            "definition": "Ammunition for tanks and artillery. **MATCHING EXAMPLES:** 105mm, 120mm, 155mm."
+          },
+          {
+            "name": "Bomb",
+            "definition": "Explosive weapons dropped from aircraft. **MATCHING EXAMPLES:** JDAM, Paveway, Mk 82."
+          },
+          {
+            "name": "Rocket",
+            "definition": "Unguided propelled weapons. **MATCHING EXAMPLES:** Hydra 70, Zuni."
+          },
+          {
+            "name": "Munition Other",
+            "definition": "Other munitions. **MATCHING EXAMPLES:** Grenades, mines, demolition charges."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Weapon",
+        "definition": "Guns and launchers.",
+        "system_types_specific": [
+          {
+            "name": "Small Arm",
+            "definition": "Firearms carried by individual soldiers. **MATCHING EXAMPLES:** M4 carbine, M17 pistol, M240 machine gun."
+          },
+          {
+            "name": "Light Weapon",
+            "definition": "Weapons served by a crew. **MATCHING EXAMPLES:** Heavy machine guns, automatic grenade launchers."
+          },
+          {
+            "name": "Cannon",
+            "definition": "Large caliber guns. **MATCHING EXAMPLES:** M242 Bushmaster, M230 Chain Gun."
+          },
+          {
+            "name": "Weapon Other",
+            "definition": "Other weapons. **MATCHING EXAMPLES:** Flamethrowers."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          }
+        ]
+      },
+      {
+        "name": "Precision Guided Weapons",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Air-to-Surface",
+            "definition": "TBD"
+          },
+          {
+            "name": "Surface-to-Surface",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Torpedo",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Lightweight",
+            "definition": "TBD"
+          },
+          {
+            "name": "Heavyweight",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Directed Energy Weapon",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Laser",
+            "definition": "TBD"
+          },
+          {
+            "name": "Microwave",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Integrated Weapon Systems",
-        "definition": "Combined weapon platforms and launchers.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Air and Missile Defense System", "definition": "System integrating air and missile defense capabilities. **CRITICAL MATCHES:** MK 57 NATO Seasparrow, Aegis Combat System." },
-          { "name": "Other", "definition": "Other integrated systems." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not applicable." }
-        ]
-      },
-      {
-        "name": "Small Arms & Ammunition",
-        "definition": "Guns and bullets. **CRITICAL:** Also includes large caliber ammunition like tank rounds.",
-        "system_types_specific": [
-          { "name": "Small Arms", "definition": "Individual firearms. **MATCHING EXAMPLES:** Next Generation Squad Weapon (NGSW), M4." },
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** 120 mm tank training ammunition, large caliber munitions." }
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Electronic Warfare Systems",
-        "definition": "EW Systems.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Electronic Attack", "definition": "Offensive EW. **MATCHING EXAMPLES:** Next Generation Jammer." },
-          { "name": "Not Applicable", "definition": "Select this when the specific system type is not listed." }
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
-        "name": "Not Applicable",
-        "definition": "General Weapon Systems.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "name": "Small Arms & Ammunition",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Small Arms",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ammunition",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Mines",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Land Mine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval Mine",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Launchers",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Swarm Drones",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Other",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Infrastructure",
-    "definition": "Military buildings and facilities.",
+    "definition": "TBD",
     "system_types_general": [
       {
+        "name": "Shipyards/Ports/Harbours",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Aircraft Basing",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Accomodation",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Non-military IT",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Hardware",
+            "definition": "TBD"
+          },
+          {
+            "name": "Software",
+            "definition": "TBD"
+          },
+          {
+            "name": "Services",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Land",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Training Facilities",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Air Traffic Management",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Hardware",
+            "definition": "TBD"
+          },
+          {
+            "name": "Software",
+            "definition": "TBD"
+          },
+          {
+            "name": "Services",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
         "name": "Maintenance Facilities",
-        "definition": "Repair and maintenance buildings. **MATCHING EXAMPLES:** Hazardous Material Facility."
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Production Facilities",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "RDT&E Facilities",
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Construction",
+            "definition": "TBD"
+          },
+          {
+            "name": "Maintenance/Upgrade",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       },
       {
         "name": "Utilities",
-        "definition": "Power, water, waste. **MATCHING EXAMPLES:** Utility privatization contracts."
-      },
-      {
-        "name": "Not Applicable",
-        "definition": "General construction.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** General construction, design-build contracts, paving, roofing, renovation." }
+          {
+            "name": "Power",
+            "definition": "TBD"
+          },
+          {
+            "name": "Water",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       }
     ]
   },
   {
     "market_segment": "Training & Simulation",
-    "definition": "Training services and equipment.",
+    "definition": "Systems and services for training and simulation.",
     "system_types_general": [
       {
-        "name": "Training Aids",
-        "definition": "Tools for training.",
+        "name": "Simulators",
+        "definition": "Device used for simulation.",
         "system_types_specific": [
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Cyber Training Environment." }
+          {
+            "name": "Flight Simulator",
+            "definition": "Simulators for aircraft. **MATCHING EXAMPLES:** Full flight simulators, cockpit procedure trainers."
+          },
+          {
+            "name": "Vehicle Simulator",
+            "definition": "Simulators for ground vehicles. **MATCHING EXAMPLES:** Driving simulators, gunnery trainers."
+          },
+          {
+            "name": "Maritime Simulator",
+            "definition": "Simulators for ships and submarines. **MATCHING EXAMPLES:** Bridge simulators, tactical trainers."
+          },
+          {
+            "name": "Weapon Simulator",
+            "definition": "Simulators for weapons. **MATCHING EXAMPLES:** Small arms trainers."
+          },
+          {
+            "name": "Simulator Other",
+            "definition": "Other simulators."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
+        ]
+      },
+      {
+        "name": "Training Aids",
+        "definition": "Equipment used for training.",
+        "system_types_specific": [
+          {
+            "name": "Training Other",
+            "definition": "Other training aids."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
+          },
+          {
+            "name": "Airborne",
+            "definition": "TBD"
+          },
+          {
+            "name": "Ground Based",
+            "definition": "TBD"
+          },
+          {
+            "name": "Naval",
+            "definition": "TBD"
+          },
+          {
+            "name": "Other",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Other",
-        "definition": "Other training.",
+        "definition": "TBD",
         "system_types_specific": [
-          { "name": "Not Applicable", "definition": "**MATCHING EXAMPLES:** Courseware development, instructor services." }
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "General Training.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when specific type is not applicable." }]
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   },
   {
     "market_segment": "Unknown",
-    "definition": "Unknown segment.",
+    "definition": "TBD",
     "system_types_general": [
       {
         "name": "Not Applicable",
-        "definition": "Select this when the system type is not applicable.",
-        "system_types_specific": [{ "name": "Not Applicable", "definition": "Select this when the specific system type is not applicable." }]
+        "definition": "TBD",
+        "system_types_specific": [
+          {
+            "name": "Not Applicable",
+            "definition": "TBD"
+          }
+        ]
       }
     ]
   }
