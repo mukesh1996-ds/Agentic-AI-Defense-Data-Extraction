@@ -40,11 +40,11 @@ REQUIRED_COLUMNS = [
 ]
 
 # ==========================================================
-# 3. PROMPTS (UNCHANGED – LLM FIRST)
+# 3. PROMPTS (UNCHANGED)
 # ==========================================================
-GEOGRAPHY_PROMPT = """<same as your original>"""
-SYSTEM_CLASSIFIER_PROMPT = """<same as your original>"""
-CONTRACT_EXTRACTOR_PROMPT = """<same as your original>"""
+GEOGRAPHY_PROMPT = """You are a Defense Geography Analyst... (same as yours)"""
+SYSTEM_CLASSIFIER_PROMPT = """You are a Senior Defense System Classification Analyst..."""
+CONTRACT_EXTRACTOR_PROMPT = """You are a Defense Contract Financial Analyst..."""
 
 # ==========================================================
 # 4. KB LOADING
@@ -71,7 +71,8 @@ def get_kb_hit(resources, text):
 def call_llm(prompt, key, provider):
     client = OpenAI(
         api_key=key if provider == "openrouter" else f"{key}:agentic",
-        base_url="https://openrouter.ai/api/v1" if provider == "openrouter"
+        base_url="https://openrouter.ai/api/v1"
+        if provider == "openrouter"
         else "https://llmfoundry.straive.com/openai/v1/"
     )
     r = client.chat.completions.create(
@@ -100,40 +101,49 @@ class AgentState(TypedDict):
 # ==========================================================
 def build_workflow(kb_resources, foundry_key, openrouter_key):
 
-    def kb_router(state):
+    def kb_router(state: AgentState):
         kb, score = get_kb_hit(kb_resources, state["text"])
-        return {"kb_meta": kb, "kb_score": score}
+        return {**state, "kb_meta": kb, "kb_score": score}
 
-    def sourcing(state):
-        return {"row": {
-            "Description of Contract": state["text"],
-            "Contract Date": state["date"],
-            "Source Link(s)": state["url"],
-            "Reported Date (By SGA)": datetime.date.today().isoformat()
-        }}
+    def sourcing(state: AgentState):
+        return {
+            **state,
+            "row": {
+                "Description of Contract": state["text"],
+                "Contract Date": state["date"],
+                "Source Link(s)": state["url"],
+                "Reported Date (By SGA)": datetime.date.today().isoformat()
+            }
+        }
 
-    def geography(state):
+    def geography(state: AgentState):
         row = state["row"].copy()
-        res = call_llm(GEOGRAPHY_PROMPT + "\n" + state["text"],
-                       foundry_key or openrouter_key,
-                       "foundry" if foundry_key else "openrouter")
+        res = call_llm(
+            GEOGRAPHY_PROMPT + "\n" + state["text"],
+            foundry_key or openrouter_key,
+            "foundry" if foundry_key else "openrouter"
+        )
         row.update(res)
-        return {"row": row}
+        return {**state, "row": row}
 
-    def system(state):
+    def system(state: AgentState):
         row = state["row"].copy()
-        res = call_llm(SYSTEM_CLASSIFIER_PROMPT + "\n" + state["text"],
-                       foundry_key or openrouter_key,
-                       "foundry" if foundry_key else "openrouter")
+        res = call_llm(
+            SYSTEM_CLASSIFIER_PROMPT + "\n" + state["text"],
+            foundry_key or openrouter_key,
+            "foundry" if foundry_key else "openrouter"
+        )
         row.update(res)
-        return {"row": row}
+        return {**state, "row": row}
 
-    def contract(state):
+    def contract(state: AgentState):
         row = state["row"].copy()
         ctx = f"Reference Date: {state['date']}\n\n{state['text']}"
-        res = call_llm(CONTRACT_EXTRACTOR_PROMPT + "\n" + ctx,
-                       foundry_key or openrouter_key,
-                       "foundry" if foundry_key else "openrouter")
+        res = call_llm(
+            CONTRACT_EXTRACTOR_PROMPT + "\n" + ctx,
+            foundry_key or openrouter_key,
+            "foundry" if foundry_key else "openrouter"
+        )
 
         val = float(res.get("value_in_millions", 0))
         cur = res.get("currency_code", "USD")
@@ -148,11 +158,12 @@ def build_workflow(kb_resources, foundry_key, openrouter_key):
             "Value (Million)": round(val, 3),
             "Currency": cur,
             "Value (USD$ Million)": round(val if cur == "USD" else val * 1.1, 3),
-            "Value Note\n(If Any)": res.get("value_note"),
+            "Value Note\n(If Any)": res.get("value_note")
         })
-        return {"rows": [row]}
 
-    def kb_validation(state):
+        return {**state, "rows": [row]}
+
+    def kb_validation(state: AgentState):
         r = state["rows"][0].copy()
         kb = state["kb_meta"]
         notes = {}
@@ -163,7 +174,14 @@ def build_workflow(kb_resources, foundry_key, openrouter_key):
 
         r["KB Validation Notes"] = json.dumps(notes)
         r["Confidence Score"] = 90 if "Conflict" not in notes.values() else 65
-        return {"rows": [r]}
+
+        return {**state, "rows": [r]}
+
+    def evaluation(state: AgentState):
+        return state
+
+    def formatter(state: AgentState):
+        return state
 
     graph = StateGraph(AgentState)
     graph.add_node("KBRouter", kb_router)
@@ -172,6 +190,8 @@ def build_workflow(kb_resources, foundry_key, openrouter_key):
     graph.add_node("System", system)
     graph.add_node("Contract", contract)
     graph.add_node("KBValidation", kb_validation)
+    graph.add_node("Evaluation", evaluation)
+    graph.add_node("ExcelFormatter", formatter)
 
     graph.add_edge(START, "KBRouter")
     graph.add_edge("KBRouter", "Sourcing")
@@ -179,12 +199,14 @@ def build_workflow(kb_resources, foundry_key, openrouter_key):
     graph.add_edge("Geography", "System")
     graph.add_edge("System", "Contract")
     graph.add_edge("Contract", "KBValidation")
-    graph.add_edge("KBValidation", END)
+    graph.add_edge("KBValidation", "Evaluation")
+    graph.add_edge("Evaluation", "ExcelFormatter")
+    graph.add_edge("ExcelFormatter", END)
 
     return graph.compile()
 
 # ==========================================================
-# 7. STREAMLIT UI (UNCHANGED BEHAVIOR)
+# 7. STREAMLIT UI
 # ==========================================================
 st.title("🛡️ Defense Agentic Pipeline")
 
@@ -199,19 +221,27 @@ if uploaded and st.button("🚀 Start Extraction"):
     app = build_workflow(kb, foundry_key, openrouter_key)
 
     df = pd.read_excel(uploaded)
-    out = []
+    all_rows = []
 
     for _, r in df.iterrows():
         state = {
             "text": str(r["Contract Description"]),
             "date": str(r["Contract Date"]),
             "url": str(r["Source URL"]),
-            "row": {}, "rows": [], "messages": []
+            "kb_meta": {},
+            "kb_score": 0.0,
+            "row": {},
+            "rows": [],
+            "messages": []
         }
-        for ev in app.stream(state):
-            if "rows" in list(ev.values())[0]:
-                out.extend(list(ev.values())[0]["rows"])
 
-    df_out = pd.DataFrame(out)
+        for event in app.stream(state):
+            for v in event.values():
+                if isinstance(v, dict) and "rows" in v:
+                    all_rows.extend(v["rows"])
+
+    df_out = pd.DataFrame(all_rows)
     df_out = df_out.reindex(columns=REQUIRED_COLUMNS, fill_value="")
-    st.dataframe(df_out)
+
+    st.success("Extraction Complete")
+    st.dataframe(df_out, use_container_width=True)
