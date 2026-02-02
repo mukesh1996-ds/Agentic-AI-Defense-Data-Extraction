@@ -36,32 +36,32 @@
             "definition": "Other fixed-wing aircraft not covered by the main categories. **MATCHING EXAMPLES:** Gliders, Experimental aircraft, Special mission aircraft not fitting other categories."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Bomber",
-            "definition": "TBD"
+            "definition": "Strategic aircraft designed to drop large amounts of ordnance on ground targets. **MATCHING EXAMPLES:** B-2 Spirit, B-52 Stratofortress, B-21 Raider, Tu-160."
           },
           {
             "name": "Light Combat Aircraft",
-            "definition": "TBD"
+            "definition": "Lightweight, multi-role fighter aircraft often used for advanced training or light attack missions. **MATCHING EXAMPLES:** FA-50, Tejas, JF-17."
           },
           {
             "name": "Gunship",
-            "definition": "TBD"
+            "definition": "Heavily armed aircraft designed for air-to-ground attacks and close air support. **MATCHING EXAMPLES:** AC-130J Ghostrider."
           },
           {
             "name": "ISR-Strike",
-            "definition": "TBD"
+            "definition": "Aircraft capable of conducting both intelligence gathering and precision strike missions. **MATCHING EXAMPLES:** Armed turboprops like AT-802U, Archangel."
           },
           {
             "name": "AEW&C",
-            "definition": "TBD"
+            "definition": "Airborne Early Warning and Control system aircraft designed to detect aircraft, ships, and vehicles at long ranges. **MATCHING EXAMPLES:** E-7 Wedgetail, Saab GlobalEye."
           },
           {
             "name": "Target Drone",
-            "definition": "TBD"
+            "definition": "Unmanned aerial vehicles used as targets for training air defense crews and testing weapon systems. **MATCHING EXAMPLES:** BQM-167, QF-16."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -91,27 +91,27 @@
           },
           {
             "name": "Rotary Wing Other",
-            "definition": "Other rotary-wing aircraft. **MATCHING EXAMPLES:** Tiltrotors (V-22 Osprey - often categorized here or separate), Autogyros."
+            "definition": "Other rotary-wing aircraft. **MATCHING EXAMPLES:** Autogyros, experimental rotary platforms."
+          },
+           {
+            "name": "Rotary Wing Attack",
+            "definition": "Synonymous with Attack Helicopter; focused on anti-armor and ground support missions."
+          },
+          {
+            "name": "Rotary Wing Maritime",
+            "definition": "Synonymous with Maritime Helicopter; focused on ASW/ASuW missions."
+          },
+          {
+            "name": "Rotary Wing Scout",
+            "definition": "Synonymous with Scout Helicopter; focused on reconnaissance."
+          },
+          {
+            "name": "Rotary Wing Transport",
+            "definition": "Synonymous with Transport Helicopter; focused on logistics and troop movement."
           },
           {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Rotary Wing Attack",
-            "definition": "TBD"
-          },
-          {
-            "name": "Rotary Wing Maritime",
-            "definition": "TBD"
-          },
-          {
-            "name": "Rotary Wing Scout",
-            "definition": "TBD"
-          },
-          {
-            "name": "Rotary Wing Transport",
-            "definition": "TBD"
           }
         ]
       },
@@ -166,20 +166,20 @@
             "definition": "Vehicles that operate in space but land like aircraft. **MATCHING EXAMPLES:** X-37B."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Hybrid",
-            "definition": "TBD"
+            "definition": "Aircraft combining features of fixed-wing and rotary-wing flight. **MATCHING EXAMPLES:** V-22 Osprey, V-280 Valor (Tiltrotors)."
           },
           {
             "name": "Airship",
-            "definition": "TBD"
+            "definition": "Powered lighter-than-air aircraft capable of being steered. **MATCHING EXAMPLES:** Hybrid Air Vehicles Airlander."
           },
           {
             "name": "Parafoil",
-            "definition": "TBD"
+            "definition": "Non-rigid textile wing with an aerodynamic cell structure, inflated by the wind. **MATCHING EXAMPLES:** Precision guided cargo delivery systems."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -224,28 +224,28 @@
             "definition": "Vehicles designed to withstand landmine and IED attacks (MRAP). **MATCHING EXAMPLES:** Cougar, MaxxPro, Bushmaster."
           },
           {
+            "name": "Armoured All-Terrain Vehicle",
+            "definition": "Highly mobile armored vehicles designed for difficult terrain (snow, swamp). **MATCHING EXAMPLES:** BvS10 Viking, Bronco."
+          },
+          {
+            "name": "Armoured Utility/Protected Patrol Vehicles",
+            "definition": "Lightly armored vehicles for patrol, liaison, and utility roles. **MATCHING EXAMPLES:** L-ATV, Eagle V, LMV."
+          },
+          {
+            "name": "Tracked Armoured Fighting Vehicles",
+            "definition": "Generic category for AFVs that move on continuous tracks."
+          },
+          {
+            "name": "Wheeled Armoured Fighting Vehicles",
+            "definition": "Generic category for AFVs that move on wheels."
+          },
+          {
             "name": "AFV Other",
             "definition": "Other armored fighting vehicles. **MATCHING EXAMPLES:** Tank destroyers, combat engineering vehicles (if armored)."
           },
           {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Armoured All-Terrain Vehicle",
-            "definition": "TBD"
-          },
-          {
-            "name": "Armoured Utility/Protected Patrol Vehicles",
-            "definition": "TBD"
-          },
-          {
-            "name": "Tracked Armoured Fighting Vehicles",
-            "definition": "TBD"
-          },
-          {
-            "name": "Wheeled Armoured Fighting Vehicles",
-            "definition": "TBD"
           }
         ]
       },
@@ -271,15 +271,15 @@
           },
           {
             "name": "Artillery Other",
-            "definition": "Other types of artillery. **MATCHING EXAMPLES:** Coastal artillery, anti-aircraft guns (if categorized here)."
+            "definition": "Other types of artillery. **MATCHING EXAMPLES:** Coastal artillery, anti-aircraft guns."
+          },
+          {
+            "name": "Other",
+            "definition": "General category for artillery not fitting specific definitions."
           },
           {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Other",
-            "definition": "TBD"
           }
         ]
       },
@@ -318,32 +318,32 @@
             "definition": "Vehicles designed to recover other vehicles. **MATCHING EXAMPLES:** M88 Hercules, Buffalo."
           },
           {
+            "name": "All-Terrain Vehicles",
+            "definition": "Small, open motorized buggies or quad bikes for off-road mobility. **MATCHING EXAMPLES:** MRZR, Sportsman."
+          },
+          {
+            "name": "Combat Engineering Vehicles",
+            "definition": "Heavily armored vehicles used for combat engineering tasks like obstacle breaching. **MATCHING EXAMPLES:** Trojan, Terrier."
+          },
+          {
+            "name": "Construction Vehicles",
+            "definition": "Standard heavy plant equipment (excavators, dozers) militarized for engineering support."
+          },
+          {
+            "name": "Engineering Equipment",
+            "definition": "Specialized equipment for engineering tasks (e.g., mine plows, rollers)."
+          },
+          {
+            "name": "Light Tactical/Utility Vehicles",
+            "definition": "Light vehicles for transport and utility, bridging the gap between LUVs and trucks."
+          },
+          {
             "name": "Logistics Support Other",
             "definition": "Other logistics and support vehicles. **MATCHING EXAMPLES:** Ambulances, command posts, fuel tankers."
           },
           {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "All-Terrain Vehicles",
-            "definition": "TBD"
-          },
-          {
-            "name": "Combat Engineering Vehicles",
-            "definition": "TBD"
-          },
-          {
-            "name": "Construction Vehicles",
-            "definition": "TBD"
-          },
-          {
-            "name": "Engineering Equipment",
-            "definition": "TBD"
-          },
-          {
-            "name": "Light Tactical/Utility Vehicles",
-            "definition": "TBD"
           }
         ]
       },
@@ -379,35 +379,35 @@
       },
       {
         "name": "Other Land",
-        "definition": "TBD",
+        "definition": "Land systems not covered in other categories.",
         "system_types_specific": [
           {
             "name": "Soldier Fighting Systems",
-            "definition": "TBD"
+            "definition": "Integrated equipment systems worn or carried by soldiers to enhance combat effectiveness. **MATCHING EXAMPLES:** Future Soldier programs, exoskeletons."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous land systems."
           }
         ]
       },
       {
         "name": "Rolling Stock",
-        "definition": "TBD",
+        "definition": "Railway vehicles used for military logistics.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "TBD",
+        "definition": "Category not applicable.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -438,24 +438,24 @@
             "definition": "Small submarines used for special operations. **MATCHING EXAMPLES:** SDV."
           },
           {
+            "name": "Diesel-Powered Submarine",
+            "definition": "Submarines propelled by diesel-electric engines, typically SSKs."
+          },
+          {
+            "name": "Nuclear-Powered Submarine",
+            "definition": "Submarines propelled by nuclear reactors, typically SSNs or SSBNs."
+          },
+          {
             "name": "Sub-Surface Other",
             "definition": "Other sub-surface vessels. **MATCHING EXAMPLES:** Research submarines, rescue submarines."
           },
           {
+            "name": "Other",
+            "definition": "Miscellaneous sub-surface vessels."
+          },
+          {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Diesel-Powered Submarine",
-            "definition": "TBD"
-          },
-          {
-            "name": "Nuclear-Powered Submarine",
-            "definition": "TBD"
-          },
-          {
-            "name": "Other",
-            "definition": "TBD"
           }
         ]
       },
@@ -469,43 +469,43 @@
           },
           {
             "name": "Destroyer",
-            "definition": "Fast, maneuverable warships. **MATCHING EXAMPLES:** Arleigh Burke class, Zumwalt class, Type 45."
+            "definition": "Fast, maneuverable warships with long-endurance. **MATCHING EXAMPLES:** Arleigh Burke class, Zumwalt class, Type 45."
           },
           {
             "name": "Frigate",
-            "definition": "Warships smaller than destroyers. **MATCHING EXAMPLES:** FREMM, Type 26, FFG(X)."
+            "definition": "Warships smaller than destroyers, used for protection of other ships. **MATCHING EXAMPLES:** FREMM, Type 26, FFG(X)."
           },
           {
             "name": "Corvette",
-            "definition": "Small warships. **MATCHING EXAMPLES:** Visby class, Sa'ar 5 class."
+            "definition": "Small warships smaller than frigates. **MATCHING EXAMPLES:** Visby class, Sa'ar 5 class."
           },
           {
             "name": "Cruiser",
-            "definition": "Large warships. **MATCHING EXAMPLES:** Ticonderoga class."
+            "definition": "Large warships capable of multiple roles. **MATCHING EXAMPLES:** Ticonderoga class."
           },
           {
             "name": "Surface Combatant Other",
             "definition": "Other surface combatants. **MATCHING EXAMPLES:** Littoral Combat Ships (LCS)."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Cruisers",
-            "definition": "TBD"
+            "definition": "Synonymous with Cruiser category."
           },
           {
             "name": "Destroyers",
-            "definition": "TBD"
+            "definition": "Synonymous with Destroyer category."
           },
           {
             "name": "Frigates",
-            "definition": "TBD"
+            "definition": "Synonymous with Frigate category."
           },
           {
             "name": "Other Surface Combatants",
-            "definition": "TBD"
+            "definition": "Synonymous with Surface Combatant Other."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -515,15 +515,23 @@
         "system_types_specific": [
           {
             "name": "Amphibious Assault Ship",
-            "definition": "Ships designed to deploy ground forces on enemy shores. **MATCHING EXAMPLES:** Wasp class, America class, Mistral class."
+            "definition": "Ships designed to deploy ground forces on enemy shores, often with flight decks. **MATCHING EXAMPLES:** Wasp class, America class, Mistral class."
           },
           {
             "name": "Landing Platform Dock",
-            "definition": "Amphibious warfare ships with a well deck. **MATCHING EXAMPLES:** San Antonio class."
+            "definition": "Amphibious warfare ships with a well deck to launch landing craft. **MATCHING EXAMPLES:** San Antonio class."
+          },
+          {
+            "name": "Landing Craft",
+            "definition": "Small boats or barges used to convey a landing force from sea to shore. **MATCHING EXAMPLES:** LCU, LCAC."
           },
           {
             "name": "Amphibious Other",
-            "definition": "Other amphibious ships. **MATCHING EXAMPLES:** Landing craft."
+            "definition": "Other amphibious ships. **MATCHING EXAMPLES:** LST (Landing Ship Tank)."
+          },
+          {
+            "name": "Other",
+            "definition": "Miscellaneous amphibious vessels."
           },
           {
             "name": "Not Applicable",
@@ -544,28 +552,28 @@
             "definition": "Small, fast vessels armed with missiles or guns. **MATCHING EXAMPLES:** Missile boats."
           },
           {
+            "name": "Patrol Boat/Craft - Coastal",
+            "definition": "Small vessels used for patrolling coastal waters."
+          },
+          {
+            "name": "Patrol Boat/Craft - Ocean",
+            "definition": "Larger patrol vessels capable of operating in open ocean (OPVs)."
+          },
+          {
+            "name": "Patrol Boat/Craft - Riverine",
+            "definition": "Small patrol boats designed for river and shallow water operations."
+          },
+          {
             "name": "Patrol Other",
             "definition": "Other patrol vessels."
           },
           {
+            "name": "Other",
+            "definition": "Miscellaneous patrol vessels."
+          },
+          {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Patrol Boat/Craft - Coastal",
-            "definition": "TBD"
-          },
-          {
-            "name": "Patrol Boat/Craft - Ocean",
-            "definition": "TBD"
-          },
-          {
-            "name": "Patrol Boat/Craft - Riverine",
-            "definition": "TBD"
-          },
-          {
-            "name": "Other",
-            "definition": "TBD"
           }
         ]
       },
@@ -584,6 +592,10 @@
           {
             "name": "Auxiliary Other",
             "definition": "Other auxiliary ships. **MATCHING EXAMPLES:** Hospital ships, tugs, research ships."
+          },
+          {
+            "name": "Other",
+            "definition": "Miscellaneous auxiliary vessels."
           },
           {
             "name": "Not Applicable",
@@ -615,99 +627,99 @@
       },
       {
         "name": "Mine Warfare/Mine Countermeasures (Maritime)",
-        "definition": "TBD",
+        "definition": "Systems designed for laying or clearing naval mines.",
         "system_types_specific": [
           {
             "name": "Mine Sweeper",
-            "definition": "TBD"
-          },
-          {
-            "name": "Mine Counter-Measures",
-            "definition": "TBD"
+            "definition": "Naval vessels designed to clear mines from an area."
           },
           {
             "name": "Mine Hunter",
-            "definition": "TBD"
+            "definition": "Naval vessels designed to detect and destroy individual mines."
+          },
+          {
+            "name": "Mine Counter-Measures",
+            "definition": "General systems or vessels used to counter the threat of mines."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous mine warfare systems."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Amphibious (Maritime)",
-        "definition": "TBD",
+        "definition": "See Amphibious category.",
         "system_types_specific": [
           {
             "name": "Amphibious Assault Ship",
-            "definition": "TBD"
+            "definition": "See Amphibious Assault Ship definition."
           },
           {
             "name": "Landing Craft",
-            "definition": "TBD"
+            "definition": "See Landing Craft definition."
           },
           {
             "name": "Landing Platform Dock",
-            "definition": "TBD"
+            "definition": "See Landing Platform Dock definition."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous amphibious vessels."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Logistics and Support (Maritime)",
-        "definition": "TBD",
+        "definition": "See Auxiliaries category.",
         "system_types_specific": [
           {
             "name": "Replenishment Ship",
-            "definition": "TBD"
+            "definition": "See Replenishment Ship definition."
           },
           {
             "name": "Transport Ship",
-            "definition": "TBD"
+            "definition": "See Transport Ship definition."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous logistics vessels."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Other Maritime",
-        "definition": "TBD",
+        "definition": "Maritime systems not covered in other categories.",
         "system_types_specific": [
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous maritime systems."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "TBD",
+        "definition": "Category not applicable.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -799,31 +811,31 @@
       },
       {
         "name": "Anti-Space",
-        "definition": "TBD",
+        "definition": "Systems designed to degrade or destroy space assets.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Other",
-        "definition": "TBD",
+        "definition": "Miscellaneous space systems.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "TBD",
+        "definition": "Category not applicable.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -854,20 +866,20 @@
             "definition": "Other types of radar. **MATCHING EXAMPLES:** Weather radar, ground penetrating radar."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Radar systems mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Radar systems located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Radar systems mounted on ships."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -892,24 +904,24 @@
             "definition": "Other communication systems."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Communication systems mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Communication systems located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Communication systems mounted on ships."
           },
           {
             "name": "Man-Portable",
-            "definition": "TBD"
+            "definition": "Communication systems carried by personnel."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -930,20 +942,20 @@
             "definition": "Other C2 systems."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "C2 systems mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "C2 systems located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "C2 systems mounted on ships."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -975,117 +987,139 @@
       },
       {
         "name": "Electro-optic Sensor",
-        "definition": "TBD",
+        "definition": "Sensors that convert light into electronic signals.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "EO sensors mounted on aircraft (e.g., FLIR pods)."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "EO sensors located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "EO sensors mounted on ships."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Sonar",
-        "definition": "TBD",
+        "definition": "Sound Navigation and Ranging systems.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Sonar systems deployed from aircraft (e.g., dipping sonar, sonobuoys)."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Sonar systems mounted on ships or submarines."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Computers",
-        "definition": "TBD",
+        "definition": "Hardware and computing infrastructure.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Cyber",
-        "definition": "TBD",
+        "definition": "Systems and software for cyber warfare and defense.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Defensive Systems",
-        "definition": "TBD",
+        "definition": "Systems designed to protect platforms from attack.",
         "system_types_specific": [
           {
             "name": "Defensive Aid Suite",
-            "definition": "TBD"
+            "definition": "Integrated systems to detect and counter threats (e.g., DIRCM)."
           },
           {
             "name": "Countermeasures",
-            "definition": "TBD"
+            "definition": "Devices deployed to decoy or jam threats (e.g., flares, chaff)."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous defensive systems."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Integrated C4ISR System",
-        "definition": "TBD",
+        "definition": "Complete C4ISR suites integrating multiple functions.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Artificial Intelligence",
-        "definition": "TBD",
+        "definition": "AI software and hardware capabilities.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Other C4ISR",
-        "definition": "TBD",
+        "definition": "Miscellaneous C4ISR systems.",
         "system_types_specific": [
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous C4ISR systems."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
+          }
+        ]
+      },
+      {
+        "name": "Electronic Warfare Systems",
+        "definition": "See Electronic Warfare category.",
+        "system_types_specific": [
+          {
+            "name": "Airborne",
+            "definition": "EW systems mounted on aircraft."
+          },
+          {
+            "name": "Ground Based",
+            "definition": "EW systems located on the ground."
+          },
+          {
+            "name": "Naval",
+            "definition": "EW systems mounted on ships."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -1128,32 +1162,32 @@
             "definition": "Missiles that fly at low altitude and high speed. **MATCHING EXAMPLES:** Tomahawk, JASSM."
           },
           {
+            "name": "Anti-Radiation",
+            "definition": "Missiles designed to detect and destroy radio emission sources (radars). **MATCHING EXAMPLES:** HARM, AARGM."
+          },
+          {
+            "name": "Anti-Ship",
+            "definition": "Missiles designed to destroy surface ships. **MATCHING EXAMPLES:** Harpoon, Exocet."
+          },
+          {
+            "name": "Anti-Submarine",
+            "definition": "Missiles designed to deliver a torpedo or depth charge against submarines. **MATCHING EXAMPLES:** ASROC."
+          },
+          {
+            "name": "Anti-Tank",
+            "definition": "Synonymous with Anti-Tank Guided Missile."
+          },
+          {
             "name": "Missile Other",
             "definition": "Other types of missiles."
           },
           {
+            "name": "Other",
+            "definition": "Miscellaneous missile systems."
+          },
+          {
             "name": "Not Applicable",
             "definition": "Category not applicable for the specific context."
-          },
-          {
-            "name": "Anti-Radiation",
-            "definition": "TBD"
-          },
-          {
-            "name": "Anti-Ship",
-            "definition": "TBD"
-          },
-          {
-            "name": "Anti-Submarine",
-            "definition": "TBD"
-          },
-          {
-            "name": "Anti-Tank",
-            "definition": "TBD"
-          },
-          {
-            "name": "Other",
-            "definition": "TBD"
           }
         ]
       },
@@ -1219,205 +1253,205 @@
       },
       {
         "name": "Precision Guided Weapons",
-        "definition": "TBD",
+        "definition": "Munitions with guidance systems to hit specific targets.",
         "system_types_specific": [
           {
             "name": "Air-to-Surface",
-            "definition": "TBD"
+            "definition": "Guided weapons launched from air to ground."
           },
           {
             "name": "Surface-to-Surface",
-            "definition": "TBD"
+            "definition": "Guided weapons launched from ground to ground."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous precision guided weapons."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Torpedo",
-        "definition": "TBD",
+        "definition": "Self-propelled underwater weapons.",
         "system_types_specific": [
           {
             "name": "Lightweight",
-            "definition": "TBD"
+            "definition": "Torpedos launched from ships or aircraft for ASW."
           },
           {
             "name": "Heavyweight",
-            "definition": "TBD"
+            "definition": "Large torpedos launched from submarines."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Directed Energy Weapon",
-        "definition": "TBD",
+        "definition": "Weapons utilizing focused energy.",
         "system_types_specific": [
           {
             "name": "Laser",
-            "definition": "TBD"
+            "definition": "High-energy lasers for damaging targets."
           },
           {
             "name": "Microwave",
-            "definition": "TBD"
+            "definition": "High-power microwaves for disrupting electronics."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous directed energy weapons."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Integrated Weapon Systems",
-        "definition": "TBD",
+        "definition": "Complete weapon systems combining sensors, fire control, and shooters.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "IWS mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "IWS located on the ground (e.g., CIWS)."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "IWS mounted on ships."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Electronic Warfare Systems",
-        "definition": "TBD",
+        "definition": "See Electronic Warfare category.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "EW systems mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "EW systems located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "EW systems mounted on ships."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Small Arms & Ammunition",
-        "definition": "TBD",
+        "definition": "See Small Arms and Munition categories.",
         "system_types_specific": [
           {
             "name": "Small Arms",
-            "definition": "TBD"
+            "definition": "Firearms carried by individual soldiers."
           },
           {
             "name": "Ammunition",
-            "definition": "TBD"
+            "definition": "Rounds for small arms."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous small arms equipment."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Mines",
-        "definition": "TBD",
+        "definition": "Explosive devices placed to destroy targets passing over/near them.",
         "system_types_specific": [
           {
             "name": "Land Mine",
-            "definition": "TBD"
+            "definition": "Mines buried or placed on the ground."
           },
           {
             "name": "Naval Mine",
-            "definition": "TBD"
+            "definition": "Mines placed in water to damage ships or submarines."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous mines."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Launchers",
-        "definition": "TBD",
+        "definition": "Systems for launching missiles or rockets.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Launchers mounted on aircraft."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Launchers located on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Launchers mounted on ships."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Swarm Drones",
-        "definition": "TBD",
+        "definition": "Groups of drones operating together autonomously.",
         "system_types_specific": [
           {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Swarm drones operating in the air."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Swarm drones operating on the ground."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Swarm drones operating at sea."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Other",
-        "definition": "TBD",
+        "definition": "Miscellaneous weapon systems.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -1425,255 +1459,255 @@
   },
   {
     "market_segment": "Infrastructure",
-    "definition": "TBD",
+    "definition": "Physical structures and facilities supporting defense operations.",
     "system_types_general": [
       {
         "name": "Shipyards/Ports/Harbours",
-        "definition": "TBD",
+        "definition": "Facilities for building, maintaining, and berthing ships.",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new shipyards or port facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Repairing or upgrading existing facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous maritime infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Aircraft Basing",
-        "definition": "TBD",
+        "definition": "Facilities for housing and operating aircraft (airbases, hangars).",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new airbase facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Repairing or upgrading existing facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous aircraft infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Accomodation",
-        "definition": "TBD",
+        "definition": "Housing for military personnel (barracks, housing).",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new accommodation."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing accommodation."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous accommodation infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Non-military IT",
-        "definition": "TBD",
+        "definition": "General IT infrastructure not part of a weapon system.",
         "system_types_specific": [
           {
             "name": "Hardware",
-            "definition": "TBD"
+            "definition": "Servers, computers, networking gear."
           },
           {
             "name": "Software",
-            "definition": "TBD"
+            "definition": "Enterprise software applications."
           },
           {
             "name": "Services",
-            "definition": "TBD"
+            "definition": "IT support and maintenance services."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous IT."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Land",
-        "definition": "TBD",
+        "definition": "Infrastructure for land forces (bases, depots).",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new land facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing land facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous land infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Training Facilities",
-        "definition": "TBD",
+        "definition": "Buildings and ranges used for training.",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new training facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing training facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous training infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Air Traffic Management",
-        "definition": "TBD",
+        "definition": "Systems and infrastructure for managing air traffic.",
         "system_types_specific": [
           {
             "name": "Hardware",
-            "definition": "TBD"
+            "definition": "Radars, towers, consoles."
           },
           {
             "name": "Software",
-            "definition": "TBD"
+            "definition": "ATC software."
           },
           {
             "name": "Services",
-            "definition": "TBD"
+            "definition": "ATC operation and support services."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous ATC infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Maintenance Facilities",
-        "definition": "TBD",
+        "definition": "Workshops and hangars for equipment maintenance.",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new maintenance facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing maintenance facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous maintenance infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Production Facilities",
-        "definition": "TBD",
+        "definition": "Factories and plants for manufacturing defense equipment.",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new production facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing production facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous production infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "RDT&E Facilities",
-        "definition": "TBD",
+        "definition": "Laboratories and test ranges.",
         "system_types_specific": [
           {
             "name": "Construction",
-            "definition": "TBD"
+            "definition": "Building new RDT&E facilities."
           },
           {
             "name": "Maintenance/Upgrade",
-            "definition": "TBD"
+            "definition": "Renovating existing RDT&E facilities."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous RDT&E infrastructure."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Utilities",
-        "definition": "TBD",
+        "definition": "Essential services for military installations.",
         "system_types_specific": [
           {
             "name": "Power",
-            "definition": "TBD"
+            "definition": "Electricity generation and distribution."
           },
           {
             "name": "Water",
-            "definition": "TBD"
+            "definition": "Water supply and treatment."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Other utilities (gas, waste)."
           },
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -1708,24 +1742,24 @@
             "definition": "Other simulators."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Training systems for airborne platforms."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Training systems for ground platforms."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Training systems for naval platforms."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous simulators."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
@@ -1738,44 +1772,44 @@
             "definition": "Other training aids."
           },
           {
-            "name": "Not Applicable",
-            "definition": "Category not applicable for the specific context."
-          },
-          {
             "name": "Airborne",
-            "definition": "TBD"
+            "definition": "Training aids for airborne operations."
           },
           {
             "name": "Ground Based",
-            "definition": "TBD"
+            "definition": "Training aids for ground operations."
           },
           {
             "name": "Naval",
-            "definition": "TBD"
+            "definition": "Training aids for naval operations."
           },
           {
             "name": "Other",
-            "definition": "TBD"
+            "definition": "Miscellaneous training aids."
+          },
+          {
+            "name": "Not Applicable",
+            "definition": "Category not applicable for the specific context."
           }
         ]
       },
       {
         "name": "Other",
-        "definition": "TBD",
+        "definition": "Miscellaneous training systems.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       },
       {
         "name": "Not Applicable",
-        "definition": "TBD",
+        "definition": "Category not applicable.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
@@ -1783,15 +1817,15 @@
   },
   {
     "market_segment": "Unknown",
-    "definition": "TBD",
+    "definition": "Market segment not identifiable.",
     "system_types_general": [
       {
         "name": "Not Applicable",
-        "definition": "TBD",
+        "definition": "Category not applicable.",
         "system_types_specific": [
           {
             "name": "Not Applicable",
-            "definition": "TBD"
+            "definition": "Category not applicable."
           }
         ]
       }
